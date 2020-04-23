@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body { background-color: rebeccapurple;
+    margin-left:70px;
+
+    }
+    button {
+      background-color: rebeccapurple;
+   
+      font-size: 12px;
+    }
+
+  
+    input {
+      margin-left: 90px;
+    }
+    
+     </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+    <h1 id="header"> WELCOME TO PARKING APP </h1>
+
+    <div id="question">
+      <h2>please enter your time interval for parking</h2>
+    </div>
+
+  <input type="text" id="price1">
+  
+
+  <button onclick="calculatePrice()" style="width:100px ; height:25px; margin:30px"> ENTER </button>
+  
+
+    </div>
+    <div id="currentprice">
+      <label> Current Price: </label>
+      <span id="CurrentPriceVAL"></span>
+    </div>
+    <br>
+
+    <script src="script.js"></script>
+  </body>
+</html>
