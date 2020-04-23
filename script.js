@@ -8,7 +8,7 @@ function checkentry(evt) {
     console.log("Correct Value");
     evt.currentTarget.style.color = "black";
   }
-
+ }
   function calculatePrice() {
 
    var price1 = parseFloat(document.getElementById ("price1").value);
