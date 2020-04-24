@@ -1,0 +1,29 @@
+function checkentry(evt) {
+  var time = parseFloat(evt.currentTarget.value);
+
+  if (time > 0 && time <= 24) {
+    console.log("Correct Value");
+    evt.currentTarget.style.color = "black";
+    enableBtn();
+  } else {
+    console.log("Wrong value");
+    evt.currentTarget.style.color = "red";
+    disableBtn();
+  }
+}
+
+function disableBtn() {
+    document.getElementById("myBtn").disabled = true;
+}
+function enableBtn() {
+    document.getElementById("myBtn").disabled = false;
+}
+
+function calculatePrice() {
+
+  var time = parseFloat(document.getElementById("price1").value);
+
+    var price1 = parseFloat(document.getElementById ("price1").value);
+    var currentprice = price1 * 100;
+    document.getElementById("CurrentPriceVAL").innerHTML = currentprice;
+}
